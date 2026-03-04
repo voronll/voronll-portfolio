@@ -106,9 +106,9 @@ export function Projetos() {
   return (
     <section
       id="projetos"
-      className="relative px-6 py-20"
+      className="relative py-12 sm:py-16"
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="w-full">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
           Projetos que eu desenvolvi
         </h2>
