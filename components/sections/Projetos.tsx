@@ -110,7 +110,7 @@ export function Projetos() {
     >
       <div className="w-full">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
-          Projetos que eu desenvolvi
+          Projetos pessoais
         </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {PROJETOS.map((projeto) => (

@@ -23,7 +23,7 @@ export function Sobre() {
       </h2>
 
       <GlassCard className="p-5 sm:p-6 space-y-4">
-        <p className="text-(--foreground)/90 leading-relaxed text-sm sm:text-base">
+        <p className="text-(--foreground)/90 leading-relaxed text-sm sm:text-base whitespace-pre-line">
           {SOBRE.bio}
         </p>
 

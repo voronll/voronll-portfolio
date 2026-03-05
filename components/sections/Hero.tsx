@@ -1,46 +1,56 @@
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
+import GithubLogoIcon from "@/components/icons/github";
+import LinkedinLogoIcon from "@/components/icons/linkedin";
+import InstagramLogoIcon from "@/components/icons/instagram";
 
 const HERO = {
   tagline: "Eduardo Bachosky",
   subtagline: "Analista e Desenvolvedor de Sistemas",
-  ctaProjects: "Ver projetos",
-  ctaCV: "Baixar CV",
+  ctaCV: "Baixar currículo",
   cvUrl: "/cv.pdf",
-  photo: "/photo.jpg",
+  // photo: "/images/hero.jpg",
+  linkedinUrl: "https://www.linkedin.com/in/eduardo-bachosky-da-silveira-925111202/",
+  githubUrl: "https://github.com/voronll",
+  instagramUrl: "https://www.instagram.com/eduardoinsano/",
 };
+
+const iconSize = 48;
+const iconClassName = "text-foreground hover:text-(--muted) transition-colors";
 
 export function Hero() {
   return (
-    <GlassCard strong className="p-6 sm:p-8 flex flex-col items-center text-center w-full max-w-[18rem] mx-auto">
-      {/* Foto maior — placeholder até você adicionar /public/photo.jpg */}
-      <div className="w-44 h-44 sm:w-52 sm:h-52 rounded-2xl overflow-hidden glass border-2 border-(--glass-border) mb-6">
-        <div className="w-full h-full bg-white/5 flex items-center justify-center text-5xl sm:text-6xl font-bold text-foreground">
-          V
-        </div>
-        {/* Descomente quando tiver a foto:
-        <Image
+    <GlassCard strong className="p-8 sm:p-10 flex flex-col items-center text-center w-full max-w-[24rem] mx-auto">
+      <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden glass border-2 border-(--glass-border) mb-8 relative">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        {/* <img
           src={HERO.photo}
           alt="Foto de perfil"
-          width={192}
-          height={192}
-          className="object-cover w-full h-full"
-          priority
-        />
-        */}
+          className="object-cover w-full h-full size-full"
+        /> */}
       </div>
 
-      <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-1">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
         {HERO.tagline}
       </h1>
-      <span className="text-xs sm:text-sm font-semibold text-(--muted) uppercase tracking-wider mb-6">
+      <span className="text-sm sm:text-base font-semibold text-(--muted) uppercase tracking-wider mb-6">
         {HERO.subtagline}
       </span>
 
-      <div className="flex flex-col gap-2 w-full">
-        <Button href="#projetos" variant="primary" className="w-full justify-center">
-          {HERO.ctaProjects}
-        </Button>
+      {/* Ícones sociais */}
+      <div className="flex items-center justify-center gap-5 mb-6">
+        <a href={HERO.linkedinUrl} target="_blank" rel="noopener noreferrer" className={iconClassName} aria-label="LinkedIn">
+          <LinkedinLogoIcon size={iconSize} color="currentColor" strokeWidth={0.1} />
+        </a>
+        <a href={HERO.githubUrl} target="_blank" rel="noopener noreferrer" className={iconClassName} aria-label="GitHub">
+          <GithubLogoIcon size={iconSize} color="currentColor" strokeWidth={0.1} />
+        </a>
+        <a href={HERO.instagramUrl} target="_blank" rel="noopener noreferrer" className={iconClassName} aria-label="Instagram">
+          <InstagramLogoIcon size={iconSize} color="currentColor" strokeWidth={0.1} />
+        </a>
+      </div>
+
+      <div className="w-full">
         <Button href={HERO.cvUrl} variant="secondary" download className="w-full justify-center">
           {HERO.ctaCV}
         </Button>
