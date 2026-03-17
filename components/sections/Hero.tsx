@@ -8,7 +8,7 @@ const HERO = {
   tagline: "Eduardo Bachosky",
   subtagline: "Analista e Desenvolvedor de Sistemas",
   ctaCV: "Baixar currículo",
-  cvUrl: "/cv.pdf",
+  cvUrl: "/curriculo.pdf",
   // photo: "/images/hero.jpg",
   linkedinUrl: "https://www.linkedin.com/in/eduardo-bachosky-da-silveira-925111202/",
   githubUrl: "https://github.com/voronll",
@@ -21,16 +21,16 @@ const iconClassName = "text-foreground hover:text-(--muted) transition-colors";
 export function Hero() {
   return (
     <GlassCard strong className="p-8 sm:p-10 flex flex-col items-center text-center w-full max-w-[24rem] mx-auto">
-      <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden glass border-2 border-(--glass-border) mb-8 relative">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        {/* <img
+      {/* <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden glass border-2 border-(--glass-border) mb-8 relative">
+        eslint-disable-next-line @next/next/no-img-element
+        <img
           src={HERO.photo}
           alt="Foto de perfil"
           className="object-cover w-full h-full size-full"
-        /> */}
-      </div>
+        />
+      </div> */}
 
-      <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2 whitespace-nowrap">
         {HERO.tagline}
       </h1>
       <span className="text-sm sm:text-base font-semibold text-(--muted) uppercase tracking-wider mb-6">
@@ -38,7 +38,7 @@ export function Hero() {
       </span>
 
       {/* Ícones sociais */}
-      <div className="flex items-center justify-center gap-5 mb-6">
+      <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6 flex-wrap">
         <a href={HERO.linkedinUrl} target="_blank" rel="noopener noreferrer" className={iconClassName} aria-label="LinkedIn">
           <LinkedinLogoIcon size={iconSize} color="currentColor" strokeWidth={0.1} />
         </a>
