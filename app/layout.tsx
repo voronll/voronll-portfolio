@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -18,11 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={`${jetbrainsMono.variable} ${jetbrainsMono.className} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          <SiteHeader />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
