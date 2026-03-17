@@ -7,7 +7,7 @@ Me chamo Eduardo, tenho 22 anos e sou um Desenvolvedor Full Stack apaixonado por
 
 Trabalho com stacks e ferramentas modernas, sempre buscando construir soluções eficientes e seguras. Também tenho um grande interesse em segurança cibernética, o que adiciona uma camada extra de cuidado aos sistemas que ajudo a criar. `,
   stackLabel: "Stacks principais",
-  stack: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Tailwind", "Docker", "Kotlin"],
+  stack: ["React", "Next.js", "Node.js", "TypeScript", "JavaScript", "PostgreSQL", "Tailwind", "Docker", "Kotlin"],
   buildLabel: "Formação",
   build: "Graduado em Análise e Desenvolvimento de Sistemas pela Faculdade SENAC - Ponta Grossa, PR.",
   languagesLabel: "Idiomas",

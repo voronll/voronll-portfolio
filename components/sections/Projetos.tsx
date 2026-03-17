@@ -24,7 +24,7 @@ const PROJETOS: Projeto[] = [
     id: "1",
     title: "Fortnite Jam Tracker ",
     description: "Plataforma de pesquisa e visualização de músicas do jogo Fortnite, com busca por nome da música, artista, album, além de permitir ouvir uma prévia das músicas diretamente no site.",
-    stack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
+    stack: ["Next.js", "TypeScript", "Prisma", "Tailwind", "Neon"],
     demoUrl: "https://fortnite-jam-tracker.vercel.app/",
     repoUrl: "https://github.com/voronll/fortnite-jam-tracker",
     metric: "Next.js + Vercel",
@@ -38,6 +38,15 @@ const PROJETOS: Projeto[] = [
     repoUrl: "https://github.com/voronll/sneaker-tracker",
     metric: "Next.js + Vercel",
     status: "em-desenvolvimento",
+  },
+  {
+    id: "3",
+    title: "Portfolio",
+    description: "Meu portfolio pessoal, onde eu compartilho meus projetos e experiências.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    repoUrl: "https://github.com/voronll/voronll-portfolio",
+    metric: "Next.js + Vercel + Tailwind",
+    status: "finalizado",
   },
 ];
 
