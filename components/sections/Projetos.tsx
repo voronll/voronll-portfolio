@@ -33,7 +33,7 @@ const PROJETOS: Projeto[] = [
   {
     id: "2",
     title: "Sneaker Tracker ",
-    description: "Plataforma de coleção de sneakers, onde o usuário pode adicionar, remover e visualizar seus sneakers favoritos.",
+    description: "Plataforma de coleção de sneakers, onde o usuário pode gerenciar seus sneakers favoritos.",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
     repoUrl: "https://github.com/voronll/sneaker-tracker",
     metric: "Next.js + Vercel",
@@ -46,7 +46,7 @@ const linkClass =
 
 function ProjectCard({ projeto }: { projeto: Projeto }) {
   return (
-    <GlassCard className="p-5 md:p-6 flex flex-col h-full hover:border-white/20 transition-colors duration-200">
+    <GlassCard className="p-5 md:p-6 flex flex-col h-full">
       <div className="flex-1 flex flex-col gap-3">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-lg font-semibold text-foreground min-w-0">

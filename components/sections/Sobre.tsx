@@ -10,6 +10,8 @@ Trabalho com stacks e ferramentas modernas, sempre buscando construir soluções
   stack: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Tailwind", "Docker", "Kotlin"],
   buildLabel: "Formação",
   build: "Graduado em Análise e Desenvolvimento de Sistemas pela Faculdade SENAC - Ponta Grossa, PR.",
+  languagesLabel: "Idiomas",
+  languages: ["Português (Nativo)", "Inglês (B2)"],
 };
 
 export function Sobre() {
@@ -49,6 +51,15 @@ export function Sobre() {
           </span>
           <p className="mt-1.5 text-(--foreground)/90 text-sm sm:text-base">
             {SOBRE.build}
+          </p>
+        </div>
+
+        <div>
+          <span className="text-xs sm:text-sm font-semibold text-(--muted) uppercase tracking-wider">
+            {SOBRE.languagesLabel}
+          </span>
+          <p className="mt-1.5 text-(--foreground)/90 text-sm sm:text-base">
+            {SOBRE.languages.join(", ")}
           </p>
         </div>
       </GlassCard>
