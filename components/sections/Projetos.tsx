@@ -1,28 +1,24 @@
 import Link from "next/link";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { useTranslations } from "next-intl";
 
 export type StatusProjeto = "finalizado" | "em-desenvolvimento";
 
 export type Projeto = {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   stack: string[];
   demoUrl?: string;
   repoUrl?: string;
   status: StatusProjeto;
 };
 
-const STATUS_LABEL: Record<StatusProjeto, string> = {
-  finalizado: "Finalizado",
-  "em-desenvolvimento": "Em desenvolvimento",
-};
-
 const PROJETOS: Projeto[] = [
   {
     id: "1",
-    title: "Fortnite Jam Tracker ",
-    description: "Plataforma de pesquisa e visualização de músicas do jogo Fortnite, com busca por nome da música, artista, album, além de permitir ouvir uma prévia das músicas diretamente no site.",
+    titleKey: "projects.items.fortnite.title",
+    descriptionKey: "projects.items.fortnite.description",
     stack: ["Next.js", "TypeScript", "Prisma", "Tailwind", "Neon"],
     demoUrl: "https://fortnite-jam-tracker.vercel.app/",
     repoUrl: "https://github.com/voronll/fortnite-jam-tracker",
@@ -30,16 +26,16 @@ const PROJETOS: Projeto[] = [
   },
   {
     id: "2",
-    title: "Sneaker Tracker ",
-    description: "Plataforma de coleção de sneakers, onde o usuário pode gerenciar seus sneakers favoritos.",
+    titleKey: "projects.items.sneaker.title",
+    descriptionKey: "projects.items.sneaker.description",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
     repoUrl: "https://github.com/voronll/sneaker-tracker",
     status: "em-desenvolvimento",
   },
   {
     id: "3",
-    title: "Portfolio",
-    description: "Meu portfolio pessoal, onde eu compartilho meus projetos e experiências.",
+    titleKey: "projects.items.portfolio.title",
+    descriptionKey: "projects.items.portfolio.description",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     repoUrl: "https://github.com/voronll/voronll-portfolio",
     status: "finalizado",
@@ -50,22 +46,25 @@ const linkClass =
   "text-sm font-medium text-foreground/90 hover:text-foreground transition-colors inline-flex items-center gap-1";
 
 function ProjectCard({ projeto }: { projeto: Projeto }) {
+  const t = useTranslations();
+  const statusLabel = t(`projects.status.${projeto.status}`);
+
   return (
     <GlassCard className="p-5 md:p-6 flex flex-col h-full">
       <div className="flex-1 flex flex-col gap-3">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-lg font-semibold text-foreground min-w-0">
-            {projeto.title}
+            {t(projeto.titleKey)}
           </h3>
           <span
             className="shrink-0 text-xs font-medium px-2.5 py-1 rounded-md glass text-(--muted)"
-            aria-label={`Status: ${STATUS_LABEL[projeto.status]}`}
+            aria-label={t("projects.statusLabel", { status: statusLabel })}
           >
-            {STATUS_LABEL[projeto.status]}
+            {statusLabel}
           </span>
         </div>
         <p className="text-(--foreground)/90 text-sm leading-relaxed">
-          {projeto.description}
+          {t(projeto.descriptionKey)}
         </p>
         <ul className="flex flex-wrap gap-1.5">
           {projeto.stack.map((tech) => (
@@ -86,7 +85,7 @@ function ProjectCard({ projeto }: { projeto: Projeto }) {
             rel="noopener noreferrer"
             className={linkClass}
           >
-            Demo →
+            {t("projects.links.demo")}
           </Link>
         )}
         {projeto.repoUrl && (
@@ -96,7 +95,7 @@ function ProjectCard({ projeto }: { projeto: Projeto }) {
             rel="noopener noreferrer"
             className={linkClass}
           >
-            Repo →
+            {t("projects.links.repo")}
           </Link>
         )}
       </div>
@@ -105,6 +104,8 @@ function ProjectCard({ projeto }: { projeto: Projeto }) {
 }
 
 export function Projetos() {
+  const t = useTranslations();
+
   return (
     <section
       id="projetos"
@@ -112,7 +113,7 @@ export function Projetos() {
     >
       <div className="w-full">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
-          Projetos pessoais
+          {t("projects.title")}
         </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {PROJETOS.map((projeto) => (

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 
 function SunIcon({ className }: { className?: string }) {
   return (
@@ -52,6 +53,7 @@ function MoonIcon({ className }: { className?: string }) {
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const t = useTranslations();
 
   useEffect(() => setMounted(true), []);
 
@@ -108,8 +110,8 @@ export function ThemeToggle() {
       type="button"
       onClick={toggleWithCircle}
       className="glass relative h-11 w-24 rounded-xl p-1 inline-flex items-center transition-colors hover:bg-white/5 border-white/10"
-      aria-label={isDark ? "Ativar tema claro" : "Ativar tema escuro"}
-      title={isDark ? "Tema: escuro" : "Tema: claro"}
+      aria-label={isDark ? t("theme.ariaLabel.toLight") : t("theme.ariaLabel.toDark")}
+      title={isDark ? t("theme.title.dark") : t("theme.title.light")}
       aria-pressed={isDark}
     >
       <span className="relative w-full h-full grid grid-cols-2 rounded-lg overflow-hidden">
