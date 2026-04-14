@@ -10,7 +10,6 @@ export type Projeto = {
   stack: string[];
   demoUrl?: string;
   repoUrl?: string;
-  metric: string;
   status: StatusProjeto;
 };
 
@@ -27,7 +26,6 @@ const PROJETOS: Projeto[] = [
     stack: ["Next.js", "TypeScript", "Prisma", "Tailwind", "Neon"],
     demoUrl: "https://fortnite-jam-tracker.vercel.app/",
     repoUrl: "https://github.com/voronll/fortnite-jam-tracker",
-    metric: "Next.js + Vercel",
     status: "finalizado",
   },
   {
@@ -36,7 +34,6 @@ const PROJETOS: Projeto[] = [
     description: "Plataforma de coleção de sneakers, onde o usuário pode gerenciar seus sneakers favoritos.",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
     repoUrl: "https://github.com/voronll/sneaker-tracker",
-    metric: "Next.js + Vercel",
     status: "em-desenvolvimento",
   },
   {
@@ -45,7 +42,6 @@ const PROJETOS: Projeto[] = [
     description: "Meu portfolio pessoal, onde eu compartilho meus projetos e experiências.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     repoUrl: "https://github.com/voronll/voronll-portfolio",
-    metric: "Next.js + Vercel + Tailwind",
     status: "finalizado",
   },
 ];
@@ -81,9 +77,6 @@ function ProjectCard({ projeto }: { projeto: Projeto }) {
             </li>
           ))}
         </ul>
-        <span className="text-xs text-(--muted) mt-1">
-          {projeto.metric}
-        </span>
       </div>
       <div className="flex gap-4 mt-4 pt-4 border-t border-(--glass-border)">
         {projeto.demoUrl && (
