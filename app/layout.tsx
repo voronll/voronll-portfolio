@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Voronll | Portfolio",
+  title: "Eduardo Bachosky | Portfolio",
   description: "Full Stack Developer — projetos, experiência e contato.",
 };
 

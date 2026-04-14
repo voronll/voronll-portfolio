@@ -8,7 +8,7 @@ const HERO = {
   tagline: "Eduardo Bachosky",
   subtagline: "Analista e Desenvolvedor de Sistemas",
   ctaCV: "Baixar currículo",
-  cvUrl: "/cv.pdf",
+  cvUrl: "/curriculo.pdf",
   photo: "/images/hero-wbg.png",
   linkedinUrl: "https://www.linkedin.com/in/eduardo-bachosky-da-silveira-925111202/",
   githubUrl: "https://github.com/voronll",
