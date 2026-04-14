@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Eduardo Bachosky | Portfolio",
+    "description": "Full Stack Developer — projects, experience and contact."
+  },
+  "localeSwitcher": {
+    "groupAriaLabel": "Site language"
+  },
+  "hero": {
+    "name": "Eduardo Bachosky",
+    "role": "Systems Analyst & Developer",
+    "downloadCv": "Download resume",
+    "profilePhotoAlt": "Profile photo",
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "instagram": "Instagram"
+    }
+  },
+  "about": {
+    "title": "About",
+    "bio": "My name is Eduardo, I’m 22 years old and I’m a Full Stack Developer passionate about Information Technology and Cybersecurity. I’m a curious and motivated professional who loves exploring new technologies, solving problems, and learning continuously. I have hands-on experience designing and developing web systems in both academic and professional projects.\n\nI work with modern stacks and tools, always aiming to build efficient and secure solutions. I’m also deeply interested in cybersecurity, which adds an extra layer of care to the systems I help create.",
+    "primaryStacks": "Main stack",
+    "education": "Education",
+    "educationValue": "B.S. in Systems Analysis and Development (Faculdade SENAC — Ponta Grossa, PR, Brazil).",
+    "languages": "Languages",
+    "languagesValue": "Portuguese (Native), English (B2)"
+  },
+  "experience": {
+    "title": "Professional experience",
+    "items": {
+      "calpar": {
+        "company": "CALPAR",
+        "role": "Front End Developer",
+        "period": "Sep/2025 – Present",
+        "description": "Web systems development for CALPAR using HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, PostgreSQL, Tailwind, Docker, Kotlin and Java."
+      },
+      "unimed": {
+        "company": "Unimed Ponta Grossa",
+        "role": "Development Assistant — Full Stack",
+        "period": "Jul/2024 – Jul/2025",
+        "description": "I worked as a full-stack developer on scalable, complex projects, focusing on modern, high-performance solutions for the healthcare sector. I used technologies such as TypeScript, React, Kotlin and Dart with frameworks like Next.js, Flutter and Node.js, and applied Tailwind CSS to build responsive, modern interfaces.\n\nThroughout my career, I was responsible for developing and maintaining robust production applications, leading technical initiatives and collaborating directly with multidisciplinary teams. I actively participated in project management using Agile methodologies (Scrum) to ensure on-time deliveries aligned with business goals."
+      },
+      "compass": {
+        "company": "Compass UOL",
+        "role": "Cloud Security Intern",
+        "period": "Apr/2023 – Aug/2023",
+        "description": "I took part in the company’s scholarship program, focused on training new talent for the AWS Cloud certification (AWS Certified Cloud Practitioner). I gained hands-on experience with AWS cloud services, cloud security best practices, and configuring and managing cloud environments.\n\nI developed skills in Agile methodologies, cloud infrastructure and security monitoring."
+      }
+    },
+    "toggle": {
+      "expand": "Expand",
+      "collapse": "Collapse"
+    }
+  },
+  "projects": {
+    "title": "Personal projects",
+    "statusLabel": "Status: {status}",
+    "status": {
+      "finalizado": "Shipped",
+      "em-desenvolvimento": "In progress"
+    },
+    "links": {
+      "demo": "Demo →",
+      "repo": "Repo →"
+    },
+    "items": {
+      "fortnite": {
+        "title": "Fortnite Jam Tracker",
+        "description": "A platform to search and visualize songs from Fortnite, with search by track name, artist and album, plus the ability to listen to previews directly on the site."
+      },
+      "sneaker": {
+        "title": "Sneaker Tracker",
+        "description": "A sneaker collection platform where users can manage their favorite sneakers."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "My personal portfolio where I share my projects and experience."
+      }
+    }
+  },
+  "theme": {
+    "ariaLabel": {
+      "toLight": "Switch to light theme",
+      "toDark": "Switch to dark theme"
+    },
+    "title": {
+      "dark": "Theme: dark",
+      "light": "Theme: light"
+    }
+  }
+}
+

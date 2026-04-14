@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { SiteHeader } from "@/components/SiteHeader";
+import { getLocale } from "next-intl/server";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -9,18 +8,15 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Eduardo Bachosky | Portfolio",
-  description: "Full Stack Developer — projetos, experiência e contato.",
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${jetbrainsMono.variable} ${jetbrainsMono.className} antialiased`}
       >
@@ -30,7 +26,6 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          <SiteHeader />
           {children}
         </ThemeProvider>
       </body>

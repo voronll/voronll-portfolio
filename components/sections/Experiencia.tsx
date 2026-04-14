@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { useTranslations } from "next-intl";
 
 function ChevronDownIcon({ className }: { className?: string }) {
   return (
@@ -21,57 +22,52 @@ function ChevronUpIcon({ className }: { className?: string }) {
 
 export type ExperienciaItem = {
   id: string;
-  empresa: string;
-  cargo: string;
-  periodo: string;
-  descricao: string;
+  empresaKey: string;
+  cargoKey: string;
+  periodoKey: string;
+  descricaoKey: string;
 };
 
 const EXPERIENCIA: ExperienciaItem[] = [
   {
     id: "1",
-    empresa: "CALPAR",
-    cargo: "Desenvolvedor Front End",
-    periodo: "Setembro/2025 – Atual",
-    descricao: "Desenvolvimento de sistemas web para a empresa CALPAR, utilizando as tecnologias HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, PostgreSQL, Tailwind, Docker, Kotlin e Java.",
+    empresaKey: "experience.items.calpar.company",
+    cargoKey: "experience.items.calpar.role",
+    periodoKey: "experience.items.calpar.period",
+    descricaoKey: "experience.items.calpar.description",
   },
   {
     id: "2",
-    empresa: "Unimed Ponta Grossa",
-    cargo: "Assistente de Desenvolvimento - Full Stack",
-    periodo: "Julho/2024 – Julho/2025",
-    descricao: `
-Trabalhei como desenvolvedor full-stack em projetos escaláveis e complexos, com foco em soluções modernas e de alto desempenho para o setor de saúde. Trabalhei com tecnologias como TypeScript, React, Kotlin e Dart, utilizando os frameworks Next.js, Flutter e Node.js, e apliquei Tailwind CSS para construir interfaces responsivas e modernas. 
-
-Ao longo da minha carreira, fui responsável por desenvolver e manter aplicações robustas em ambientes de produção, liderando iniciativas técnicas e colaborando diretamente com equipes multidisciplinares. Participei ativamente da gestão de projetos, aplicando metodologias ágeis (Scrum) para garantir entregas pontuais e alinhadas aos objetivos de negócio.`,
+    empresaKey: "experience.items.unimed.company",
+    cargoKey: "experience.items.unimed.role",
+    periodoKey: "experience.items.unimed.period",
+    descricaoKey: "experience.items.unimed.description",
   },
   {
     id: "3",
-    empresa: "Compass UOL",
-    cargo: "Estagiário em Cloud Security",
-    periodo: "Abril/2023 – Agosto/2023",
-    descricao: `
-Participei do Programa de Bolsas de Estudo da empresa, com foco na formação de novos talentos para a certificação em Nuvem AWS (AWS Certified Cloud Practitioner). Adquiri experiência prática com serviços de nuvem da AWS, melhores práticas de segurança em nuvem e configuração e gerenciamento de ambientes de nuvem. 
-
-Desenvolvi habilidades em metodologias ágeis, infraestrutura em nuvem e monitoramento de segurança.`,
+    empresaKey: "experience.items.compass.company",
+    cargoKey: "experience.items.compass.role",
+    periodoKey: "experience.items.compass.period",
+    descricaoKey: "experience.items.compass.description",
   },
 ];
 
 function ExperienciaCard({ item }: { item: ExperienciaItem }) {
   const [expanded, setExpanded] = useState(false);
+  const t = useTranslations();
 
   return (
     <GlassCard className="p-5 sm:p-6 relative">
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
         <h3 className="text-base sm:text-lg font-semibold text-foreground">
-          {item.cargo}
+          {t(item.cargoKey)}
         </h3>
         <span className="text-xs sm:text-sm font-medium text-(--muted)">
-          {item.periodo}
+          {t(item.periodoKey)}
         </span>
       </div>
       <p className="text-sm font-medium text-foreground/80 mb-2">
-        {item.empresa}
+        {t(item.empresaKey)}
       </p>
       <div className="relative">
         <p
@@ -79,13 +75,13 @@ function ExperienciaCard({ item }: { item: ExperienciaItem }) {
             expanded ? "whitespace-pre-line" : "line-clamp-2 pr-8"
           }`}
         >
-          {item.descricao}
+          {t(item.descricaoKey)}
         </p>
         <button
           type="button"
           onClick={() => setExpanded((e) => !e)}
           className="absolute bottom-0 right-0 p-1 -mb-1 -mr-1 rounded text-foreground/70 hover:text-foreground hover:bg-white/10 transition-colors"
-          aria-label={expanded ? "Recolher" : "Expandir"}
+          aria-label={expanded ? t("experience.toggle.collapse") : t("experience.toggle.expand")}
         >
           {expanded ? (
             <ChevronUpIcon className="shrink-0" />
@@ -99,13 +95,15 @@ function ExperienciaCard({ item }: { item: ExperienciaItem }) {
 }
 
 export function Experiencia() {
+  const t = useTranslations();
+
   return (
     <section
       id="experiencia"
       className="relative w-full min-w-0"
     >
       <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-        Experiência profissional
+        {t("experience.title")}
       </h2>
 
       <div className="space-y-4">
