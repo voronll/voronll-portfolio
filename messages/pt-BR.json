@@ -76,6 +76,10 @@
       "portfolio": {
         "title": "Portfolio",
         "description": "Meu portfolio pessoal, onde eu compartilho meus projetos e experiências."
+      },
+      "packpull": {
+        "title": "PackPull",
+        "description": "Software que realiza o download de um qualquer modpack de Minecraft lendo apenas o arquivo manifest.json."
       }
     }
   },

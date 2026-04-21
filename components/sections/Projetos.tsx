@@ -40,6 +40,14 @@ const PROJETOS: Projeto[] = [
     repoUrl: "https://github.com/voronll/voronll-portfolio",
     status: "finalizado",
   },
+  {
+    id: "4",
+    titleKey: "projects.items.packpull.title",
+    descriptionKey: "projects.items.packpull.description",
+    stack: ["Vite", "Electron", "React"],
+    repoUrl: "https://github.com/voronll/packpull",
+    status: "em-desenvolvimento",
+  },
 ];
 
 const linkClass =

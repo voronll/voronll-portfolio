@@ -76,6 +76,10 @@
       "portfolio": {
         "title": "Portfolio",
         "description": "My personal portfolio where I share my projects and experience."
+      },
+      "packpull": {
+        "title": "PackPull",
+        "description": "Software that downloads a Minecraft modpack by reading the manifest.json file."
       }
     }
   },
