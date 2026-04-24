@@ -8,7 +8,7 @@
   },
   "hero": {
     "name": "Eduardo Bachosky",
-    "role": "Systems Analyst & Developer",
+    "role": "Full Stack Developer · React · Next.js · TypeScript",
     "downloadCv": "Download resume",
     "profilePhotoAlt": "Profile photo",
     "social": {
@@ -22,7 +22,7 @@
     "bio": "My name is Eduardo, I’m 22 years old and I’m a Full Stack Developer passionate about Information Technology and Cybersecurity. I’m a curious and motivated professional who loves exploring new technologies, solving problems, and learning continuously. I have hands-on experience designing and developing web systems in both academic and professional projects.\n\nI work with modern stacks and tools, always aiming to build efficient and secure solutions. I’m also deeply interested in cybersecurity, which adds an extra layer of care to the systems I help create.",
     "primaryStacks": "Main stack",
     "education": "Education",
-    "educationValue": "B.S. in Systems Analysis and Development (Faculdade SENAC — Ponta Grossa, PR, Brazil).",
+    "educationValue": "B.S. in Systems Analysis and Development — Faculdade SENAC, Ponta Grossa, PR, Brazil.",
     "languages": "Languages",
     "languagesValue": "Portuguese (Native), English (B2)"
   },
@@ -31,21 +31,21 @@
     "items": {
       "calpar": {
         "company": "CALPAR",
-        "role": "Front End Developer",
-        "period": "Sep/2025 – Present",
-        "description": "Web systems development for CALPAR using HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, PostgreSQL, Tailwind, Docker, Kotlin and Java."
+        "role": "Frontend Developer",
+        "period": "Sep 2025 – Present",
+        "description": "Sole frontend owner of a large-scale logistics management system, responsible for all UI development, maintenance, and technical documentation.\n\n• Implemented a real-time notification system by translating a WebSocket-based backend architecture into a seamless frontend experience.\n\n• Maintained a complex multi-role authentication system with WhatsApp-based OTP and role-specific token flows.\n\n• Refactored project documentation using Docusaurus, keeping UI release notes and README consistently up to date.\n\n• Delivered incremental feature releases on a weekly cadence in a production environment."
       },
       "unimed": {
         "company": "Unimed Ponta Grossa",
-        "role": "Development Assistant — Full Stack",
-        "period": "Jul/2024 – Jul/2025",
-        "description": "I worked as a full-stack developer on scalable, complex projects, focusing on modern, high-performance solutions for the healthcare sector. I used technologies such as TypeScript, React, Kotlin and Dart with frameworks like Next.js, Flutter and Node.js, and applied Tailwind CSS to build responsive, modern interfaces.\n\nThroughout my career, I was responsible for developing and maintaining robust production applications, leading technical initiatives and collaborating directly with multidisciplinary teams. I actively participated in project management using Agile methodologies (Scrum) to ensure on-time deliveries aligned with business goals."
+        "role": "Full Stack Developer",
+        "period": "Jul 2024 – Jul 2025",
+        "description": "Led end-to-end development of three internal systems serving HR, operations, and finance teams across a large healthcare organization, working in an agile environment with direct stakeholder contact.\n\n• Built a real-time employee offboarding platform from scratch, integrating with legacy HR systems (Senior, E-Social) via automated database routines. Included a custom-built dynamic form engine with versioning, multi-step flows, LGPD-compliant consent tracking, and geolocation logging, driving data-driven policy changes across the organization.\n\n• Automated offboarding survey delivery via WhatsApp using Kafka-based scheduling and Syngoo, authenticating ex-employees by registered phone number, a key factor in achieving high response rates.\n\n• Developed a facilitator directory system that replaced a complex spreadsheet, improving cross-department communication and simplifying project intake across the company.\n\n• Delivered a PIX payment feature for self-service IoT kiosks built with Flutter/Dart, a framework learned in one week, reducing physical invoice printing by ~80–90% and virtually eliminating payment failures. Presented results directly to IT leadership."
       },
       "compass": {
         "company": "Compass UOL",
         "role": "Cloud Security Intern",
-        "period": "Apr/2023 – Aug/2023",
-        "description": "I took part in the company’s scholarship program, focused on training new talent for the AWS Cloud certification (AWS Certified Cloud Practitioner). I gained hands-on experience with AWS cloud services, cloud security best practices, and configuring and managing cloud environments.\n\nI developed skills in Agile methodologies, cloud infrastructure and security monitoring."
+        "period": "Apr 2023 – Aug 2023",
+        "description": "Participated in the company's talent development program focused on AWS cloud certification (AWS Certified Cloud Practitioner).\n\n• Gained hands-on experience with AWS cloud services, cloud security best practices, and environment configuration and management.\n\n• Developed skills in Agile methodologies, cloud infrastructure, and security monitoring."
       }
     },
     "toggle": {
@@ -67,19 +67,19 @@
     "items": {
       "fortnite": {
         "title": "Fortnite Jam Tracker",
-        "description": "A platform to search and visualize songs from Fortnite, with search by track name, artist and album, plus the ability to listen to previews directly on the site."
+        "description": "A platform to search and explore songs from Fortnite, with search by track name, artist and album, plus in-browser audio previews. Built with Next.js, TypeScript, Prisma and Neon."
       },
       "sneaker": {
         "title": "Sneaker Tracker",
-        "description": "A sneaker collection platform where users can manage their favorite sneakers."
+        "description": "A sneaker collection manager where users can track and organize their favorite pairs. Built with Next.js, TypeScript and PostgreSQL."
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "My personal portfolio where I share my projects and experience."
+        "description": "This portfolio — built from scratch with locale detection, a language switcher, and dark/light theme support. Fully typed with TypeScript and styled with Tailwind CSS."
       },
       "packpull": {
         "title": "PackPull",
-        "description": "Software that downloads a Minecraft modpack by reading the manifest.json file."
+        "description": "A cross-platform desktop app that automates Minecraft modpack downloads by parsing a manifest.json file. Built with Vite, Electron and React."
       }
     }
   },
@@ -94,4 +94,3 @@
     }
   }
 }
-

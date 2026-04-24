@@ -8,7 +8,7 @@
   },
   "hero": {
     "name": "Eduardo Bachosky",
-    "role": "Analista e Desenvolvedor de Sistemas",
+    "role": "Desenvolvedor Full Stack · React · Next.js · TypeScript",
     "downloadCv": "Baixar currículo",
     "profilePhotoAlt": "Foto de perfil",
     "social": {
@@ -22,7 +22,7 @@
     "bio": "Me chamo Eduardo, tenho 22 anos e sou um Desenvolvedor Full Stack apaixonado por Tecnologia da Informação e Segurança Cibernética. Sou um profissional curioso e motivado que adora explorar novas tecnologias, resolver problemas e aprender constantemente. Tenho experiência prática em projetar e desenvolver sistemas web, tanto em projetos acadêmicos quanto profissionais.\n\nTrabalho com stacks e ferramentas modernas, sempre buscando construir soluções eficientes e seguras. Também tenho um grande interesse em segurança cibernética, o que adiciona uma camada extra de cuidado aos sistemas que ajudo a criar.",
     "primaryStacks": "Stacks principais",
     "education": "Formação",
-    "educationValue": "Graduado em Análise e Desenvolvimento de Sistemas pela Faculdade SENAC - Ponta Grossa, PR.",
+    "educationValue": "Graduado em Análise e Desenvolvimento de Sistemas — Faculdade SENAC, Ponta Grossa, PR.",
     "languages": "Idiomas",
     "languagesValue": "Português (Nativo), Inglês (B2)"
   },
@@ -33,19 +33,19 @@
         "company": "CALPAR",
         "role": "Desenvolvedor Front End",
         "period": "Setembro/2025 – Atual",
-        "description": "Desenvolvimento de sistemas web para a empresa CALPAR, utilizando as tecnologias HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, PostgreSQL, Tailwind, Docker, Kotlin e Java."
+        "description": "Responsável 100% pelo front end de um sistema de gestão logística de grande porte, incluindo desenvolvimento, manutenção e documentação técnica.\n\n• Implementei um sistema de notificações em tempo real traduzindo uma arquitetura WebSocket do back-end para uma experiência fluida no front-end.\n\n• Mantive um sistema de autenticação multi-perfil com OTP via WhatsApp e tokens específicos por tipo de usuário\n\n• Refatorei a documentação do projeto utilizando Docusaurus, mantendo notas de atualização de UI e README sempre atualizados.\n\n• Entregas incrementais semanais em ambiente de produção."
       },
       "unimed": {
         "company": "Unimed Ponta Grossa",
-        "role": "Assistente de Desenvolvimento - Full Stack",
+        "role": "Desenvolvedor Full Stack",
         "period": "Julho/2024 – Julho/2025",
-        "description": "Trabalhei como desenvolvedor full-stack em projetos escaláveis e complexos, com foco em soluções modernas e de alto desempenho para o setor de saúde. Trabalhei com tecnologias como TypeScript, React, Kotlin e Dart, utilizando os frameworks Next.js, Flutter e Node.js, e apliquei Tailwind CSS para construir interfaces responsivas e modernas.\n\nAo longo da minha carreira, fui responsável por desenvolver e manter aplicações robustas em ambientes de produção, liderando iniciativas técnicas e colaborando diretamente com equipes multidisciplinares. Participei ativamente da gestão de projetos, aplicando metodologias ágeis (Scrum) para garantir entregas pontuais e alinhadas aos objetivos de negócio."
+        "description": "Desenvolvimento end-to-end de três sistemas internos atendendo as áreas de RH, operações e financeiro de uma grande operadora de saúde, em ambiente ágil com contato direto com os clientes internos.\n\n• Construí do zero uma plataforma de gestão de desligamentos em tempo real, integrando sistemas legados (Senior, E-Social) via rotinas automatizadas de banco de dados. O sistema incluiu um form engine dinâmico com versionamento, fluxos multi-etapa, rastreabilidade conforme a LGPD e log de geolocalização, viabilizando mudanças de gestão baseadas em dados.\n\n• Automatizei o envio de questionários de desligamento via WhatsApp com rotinas Kafka e Syngoo, autenticando ex-colaboradores pelo telefone cadastrado, fator chave para alta taxa de resposta.\n\n• Desenvolvi um sistema de diretório de facilitadores que substituiu uma planilha complexa, melhorando a comunicação entre áreas e simplificando a captação de demandas de projetos.\n\n• Entreguei a funcionalidade de pagamento via PIX em totens de autoatendimento (IoT) com Flutter/Dart, framework aprendido em uma semana, reduzindo a impressão de boletos em ~80–90% e eliminando falhas de pagamento. Apresentei os resultados diretamente à liderança de TI."
       },
       "compass": {
         "company": "Compass UOL",
         "role": "Estagiário em Cloud Security",
         "period": "Abril/2023 – Agosto/2023",
-        "description": "Participei do Programa de Bolsas de Estudo da empresa, com foco na formação de novos talentos para a certificação em Nuvem AWS (AWS Certified Cloud Practitioner). Adquiri experiência prática com serviços de nuvem da AWS, melhores práticas de segurança em nuvem e configuração e gerenciamento de ambientes de nuvem.\n\nDesenvolvi habilidades em metodologias ágeis, infraestrutura em nuvem e monitoramento de segurança."
+        "description": "Participei do Programa de Bolsas de Estudo com foco em formação para certificação AWS (AWS Certified Cloud Practitioner).\n\n• Experiência prática com serviços de nuvem AWS, melhores práticas de segurança e configuração de ambientes de nuvem.\n\n• Desenvolvimento de habilidades em metodologias ágeis, infraestrutura em nuvem e monitoramento de segurança."
       }
     },
     "toggle": {
@@ -67,19 +67,19 @@
     "items": {
       "fortnite": {
         "title": "Fortnite Jam Tracker",
-        "description": "Plataforma de pesquisa e visualização de músicas do jogo Fortnite, com busca por nome da música, artista, album, além de permitir ouvir uma prévia das músicas diretamente no site."
+        "description": "Plataforma para pesquisar e explorar músicas do Fortnite, com busca por nome, artista e álbum, além de pré-visualização de áudio direto no site. Desenvolvido com Next.js, TypeScript, Prisma e Neon."
       },
       "sneaker": {
         "title": "Sneaker Tracker",
-        "description": "Plataforma de coleção de sneakers, onde o usuário pode gerenciar seus sneakers favoritos."
+        "description": "Gerenciador de coleção de sneakers onde o usuário pode acompanhar e organizar seus pares favoritos. Desenvolvido com Next.js, TypeScript e PostgreSQL."
       },
       "portfolio": {
-        "title": "Portfolio",
-        "description": "Meu portfolio pessoal, onde eu compartilho meus projetos e experiências."
+        "title": "Portfólio",
+        "description": "Este portfólio — construído do zero com detecção de locale, switch de idioma e suporte a tema claro/escuro. Totalmente tipado com TypeScript e estilizado com Tailwind CSS."
       },
       "packpull": {
         "title": "PackPull",
-        "description": "Software que realiza o download de um qualquer modpack de Minecraft lendo apenas o arquivo manifest.json."
+        "description": "Aplicação desktop multiplataforma que automatiza o download de modpacks de Minecraft lendo o arquivo manifest.json. Desenvolvido com Vite, Electron e React."
       }
     }
   },
@@ -94,4 +94,3 @@
     }
   }
 }
-
