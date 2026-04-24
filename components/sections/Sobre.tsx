@@ -2,7 +2,7 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { useTranslations } from "next-intl";
 
 const SOBRE = {
-  stack: ["React", "Next.js", "Node.js", "TypeScript", "JavaScript", "PostgreSQL", "Tailwind", "Docker", "Kotlin"],
+  stack: ["React", "Next.js", "Node.js", "TypeScript", "JavaScript","Flutter","Dart","PostgreSQL", "Tailwind", "Docker", "Kotlin"],
 };
 
 export function Sobre() {
