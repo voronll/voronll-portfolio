@@ -33,7 +33,7 @@
         "company": "CALPAR",
         "role": "Frontend Developer",
         "period": "Sep 2025 – Present",
-        "description": "Sole frontend owner of a large-scale logistics management system, responsible for all UI development, maintenance, and technical documentation.\n\n• Implemented a real-time notification system by translating a WebSocket-based backend architecture into a seamless frontend experience.\n\n• Maintained a complex multi-role authentication system with WhatsApp-based OTP and role-specific token flows.\n\n• Refactored project documentation using Docusaurus, keeping UI release notes and README consistently up to date.\n\n• Delivered incremental feature releases on a weekly cadence in a production environment."
+        "description": "Solely responsible for the entire front end lifecycle of a large-scale logistics management system, working autonomously across development, maintenance, architecture, and technical documentation.\n\n• Built a real-time notification system by translating a WebSocket back-end architecture into a seamless front-end experience.\n\n• Maintained a multi-profile authentication system with OTP via WhatsApp and user-type-specific tokens, ensuring security and stability in production.\n\n• Managed a Node.js version upgrade in a production environment with zero service disruption, including granular Git branch and sub-branch control.\n\n• Restructured the project's technical documentation using Docusaurus, keeping UI changelogs and READMEs consistently up to date with each release.\n\n• Delivered weekly incremental updates directly to production as the sole owner of all front-end architecture and quality decisions."
       },
       "unimed": {
         "company": "Unimed Ponta Grossa",

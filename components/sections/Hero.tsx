@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 const HERO = {
   cvUrl: "/curriculo.pdf",
   photo: "/images/hero-wbg.png",
-  linkedinUrl: "https://www.linkedin.com/in/eduardo-bachosky-da-silveira-925111202/",
+  linkedinUrl: "https://www.linkedin.com/in/eduardobachosky/",
   githubUrl: "https://github.com/voronll",
   instagramUrl: "https://www.instagram.com/eduardoinsano/",
 };
